@@ -1,0 +1,125 @@
+.box {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  // background: #060c21;
+  margin-top: 30px;
+  z-index:2;
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: 1;
+}
+
+.box:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+.box:before,
+.box:after {
+  background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+  z-index: 1;
+}
+
+.content {
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.box2{
+  -webkit-box-shadow: 10px 10px 195px 0px rgba(0,252,8,1);
+-moz-box-shadow: 10px 10px 195px 0px rgba(0,252,8,1);
+box-shadow: 10px 10px 195px 0px rgba(0,252,8,1);
+margin-top: 150px;
+border-radius: 20px;
+}
+
+// .box2{
+//     position: relative;
+//     width: 300px;
+//     height: 400px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: #060c21
+// }
+
+// .box2:before{
+//     content: '';
+//     position: absolute;
+//     top: -2px;
+//     left: -2px;
+//     right: -2px;
+//     bottom: -2px;
+//     background: #fff;
+//     z-index: -1;
+// }
+
+// .box2:after{
+//     content: '';
+//     position: absolute;
+//     top: -2px;
+//     left: -2px;
+//     right: -2px;
+//     bottom: -2px;
+//     background: #fff;
+//     z-index: -2;
+//     filter:blur(40px)
+// }
+
+// .box2:before, .box2:after {
+//     background: linear-gradient(235deg,#CCFF00, #060c21, #FF6037)
+// }
+
+// .box3{
+//     position: relative;
+//     width: 300px;
+//     height: 400px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: #060c21
+// }
+
+// .box3:before{
+//     content: '';
+//     position: absolute;
+//     top: -2px;
+//     left: -2px;
+//     right: -2px;
+//     bottom: -2px;
+//     background: #fff;
+//     z-index: -1;
+// }
+
+// .box3:after{
+//     content: '';
+//     position: absolute;
+//     top: -2px;
+//     left: -2px;
+//     right: -2px;
+//     bottom: -2px;
+//     background: #fff;
+//     z-index: -2;
+//     filter:blur(40px)
+// }
+
+// .box3:before, .box3:after {
+//     background: linear-gradient(235deg #FFCC33, #060c21, #00d40b)
+// }

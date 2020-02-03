@@ -1,0 +1,97 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+.shadow
+{
+    position: relative;
+    margin: 10px auto 0;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(0deg, #000, #262626);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.shadow::before,
+.shadow::after
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg,#fb0094,#0000ff, #00ff00, #ffff00, #ff0000, #fb0094,#0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+.shadow::after
+{
+    filter: blur(20px);
+}
+
+.hero {
+display:flex;
+flex-direction: row;
+justify-content: center;
+justify-self: center;
+justify-items: center;
+
+}
+
+.creators-container {
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    text-align:Center;
+    justify-content: center;
+    margin-top: 20px;
+
+
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 300% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+}
+
+
+
+  @media (max-width: 400px) {
+    .hero-section {
+        height: 200px ;
+    }
+    .creators-container  {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        
+  
+      }
+  }
+  
+  @media (min-width: 900px) {
+    .container {
+      margin: 0 7em 0;
+    }
+  }
+  
